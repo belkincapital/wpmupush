@@ -2,20 +2,6 @@
 
 /** 
  * WPMU Push (wpmupush.com)
- * Deregister jQuery
- * @author: Jason Jersey
- * @since: 1.0
- */
-/**
-add_action( 'wp_print_scripts', 'wpmup_de_script', 100 );
-*/
-function wpmup_de_script() {
-    wp_dequeue_script( 'jquery' );
-    wp_deregister_script( 'jquery' );
-}
-
-/** 
- * WPMU Push (wpmupush.com)
  * Create random version key
  * @author: Jason Jersey
  * @since: 1.0
