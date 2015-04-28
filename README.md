@@ -3,6 +3,8 @@ Display notifications to your site visitors or logged in users when there is a n
 
 INTRO: https://www.youtube.com/watch?v=MCteV2e5Hlk
 
+IMPORTANT: After downloading from Github, you MUST rename the zip file from wpmupush-master.zip to wpmupush.zip to avoid any potential issues. I'll fix this later on so you wont need to rename it, but for now you should rename the file to wpmupush.zip then upload it like usualy to your WordPress site to install and activate.
+
 When you deactivate the plugin, a clean uninstall is ran that deletes all database tables associated with the plugin.
 
 This plugin currently works as an onsite notification of new posts. Great for greeting users and telling them what's new. On member sites, this can really be handy as well for real-time notifications.
