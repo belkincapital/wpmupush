@@ -15,7 +15,7 @@ This plugin currently works as an onsite notification of new posts. Great for gr
 These push notifications can be extended beyond the current capability if you use this plugin with the Push API (https://w3c.github.io/push-api/) and run a Service Worker over https (http://www.html5rocks.com/en/tutorials/service-worker/introduction/). However, that is optional and requires a few additional steps. But right out-the-box WPMU Push works with no additional setup and works as an excellent way to grab your users attention.
 
 #### Notification API
-This plugin utilizes the HTML5 Web Notification API. More information can be found on the here: https://notifications.spec.whatwg.org
+This plugin utilizes the HTML5 Web Notification API. More information can be found here: https://notifications.spec.whatwg.org
 
 #### The Future
 I have plans to implement comment notifications down the line, such as notifications of replies to comments and admin notifications of all new comments.
