@@ -1,0 +1,1 @@
+0.5 = Initial pre-release. Beta 1.
