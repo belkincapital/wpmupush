@@ -1,4 +1,4 @@
-=== Plugin Name ===
+=== WPMU Push ===
 Contributors: icryptic
 Donate link: http://goo.gl/E4KiBV
 Tags: popup, desktop notification, web notification, push notification, notifications, chrome notification, firefox notification, html5 notification, messages, announcement, call to action, wpmu, wordpress multisite, wp multisite, multisite, wp mu, mu, pushover, roost
