@@ -4,7 +4,7 @@ Donate link: http://goo.gl/E4KiBV
 Tags: popup, desktop notification, web notification, push notification, notifications, chrome notification, firefox notification, html5 notification, messages, announcement, call to action, wpmu, wordpress multisite, wp multisite, multisite, wp mu, mu, pushover, roost
 Requires at least: 3.9.1
 Tested up to: 4.2.1
-Stable tag: 1.0
+Stable tag: 1.0.2
 License: GNU General Public License 3.0
 License URI: http://www.gnu.org/licenses/gpl-3.0.txt
 
