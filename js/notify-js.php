@@ -19,13 +19,16 @@ function wpmup_notify_js() {
 	$db_table  = $wpdb->prefix . 'wpmupush_posts_activity';
 	$sql_one   = $wpdb->query("SELECT * FROM $db_table WHERE user_id = $user_id AND post_id = $wpmup_post_id");
 	$sql_two   = $wpdb->query("SELECT * FROM $db_table WHERE ip_address = '$wpmup_ip_address' AND post_id = $wpmup_post_id");
+	
+	/** Get plugin directory url */
+        $wpmupush_url  = plugin_dir_url( dirname(__FILE__) );
 		
 	if ( is_user_logged_in() ) {/** START: if logged in */
 
 /** the code within this function (below) is javascript */
 
 ?>
-function notifyMe() {
+function notifyMe(){
 
     if (Notification.permission === "granted") {  
     
@@ -34,13 +37,13 @@ function notifyMe() {
     <?php while (have_posts()) : the_post(); ?>
         var options = { 
             body: "<?php the_title(); ?>",
-            icon: "<?php echo plugins_url(); ?>/wpmupush/image/wp-icon.png",
+            icon: "<?php echo $wpmupush_url; ?>image/wp-icon.png",
             dir : "ltr"
         };
         var notification = new Notification("New Post: (ID: <?php echo $wpmup_post_id; ?>)",options);     
         notification.onclick=function(){ window.location.href = "<?php the_permalink(); ?>"; };
     <?php endwhile; ?>      
-        notification.onshow=function(){ var wpmupsnd = new Audio("<?php echo plugins_url(); ?>/wpmupush/audio/new_post.mp3");wpmupsnd.volume = 0.2;wpmupsnd.play(); };               
+        notification.onshow=function(){ var wpmupsnd = new Audio("<?php echo $wpmupush_url; ?>audio/new_post.mp3");wpmupsnd.volume = 0.2;wpmupsnd.play(); };               
     <?php wpmupush_insert_posts_activity_data(); } ?>
     
     }
@@ -65,13 +68,13 @@ function notifyMe() {
     <?php while (have_posts()) : the_post(); ?>
         var options = { 
             body: "<?php the_title(); ?>",
-            icon: "<?php echo plugins_url(); ?>/wpmupush/image/wp-icon.png",
+            icon: "<?php echo $wpmupush_url; ?>image/wp-icon.png",
             dir : "ltr"
         };
         var notification = new Notification("New Post: (ID: <?php echo $wpmup_post_id; ?>)",options);    
         notification.onclick=function(){ window.location.href = "<?php the_permalink(); ?>"; };
     <?php endwhile; ?>      
-        notification.onshow=function(){ var wpmupsnd = new Audio("<?php echo plugins_url(); ?>/wpmupush/audio/new_post.mp3");wpmupsnd.volume = 0.2;wpmupsnd.play(); };               
+        notification.onshow=function(){ var wpmupsnd = new Audio("<?php echo $wpmupush_url; ?>audio/new_post.mp3");wpmupsnd.volume = 0.2;wpmupsnd.play(); };               
     <?php wpmupush_insert_posts_activity_data(); } ?>
     
     }

@@ -52,10 +52,16 @@ If you modify this plugin or reuse any portion of it, you MUST keep all attribut
 
 == Changelog ==
 
+= 1.0.1 = 
+Fixed Hardcoded plugin folder name. Issues #11 on Github via https://github.com/belkincapital/wpmupush/issues/11
+
 = 1.0 =
 * Initial public release
 
 == Upgrade Notice ==
+
+= 1.0.1 =
+Fixed small issue related to users who change their wp-admin and wp-content urls.
 
 = 1.0 =
 First public release of WPMU Push. This is experimential software.
