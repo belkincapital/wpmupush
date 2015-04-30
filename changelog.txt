@@ -1,3 +1,5 @@
+1.0.2 = Minor fix to init-js.php
+
 1.0.1 = Fixed Hardcoded plugin folder name. Issues #11 on Github via https://github.com/belkincapital/wpmupush/issues/11
 
 1.0   = Initial public release.

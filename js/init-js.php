@@ -31,17 +31,16 @@ function get_notifyMe() {
  */
 function wpmup_init_js() { 	
 
-/** the code within this function (below) is javascript */
-
-?>
-    /** $(document).ready( */
-    jQuery(document).ready(
+/** 
+ * the code within this function (below) is javascript
+ * well, except for the echo of course. 
+ */
+echo 'jQuery(document).ready(
         function() {
             setInterval(function() {                
 
-            /** $.ajax({ */
             jQuery.ajax({
-                url: "<?php echo get_notifyMe(); ?>",
+                url: "' . get_notifyMe() . '",
                 context: document.body
             }).done(function() { 
                 notifyMe();
@@ -50,10 +49,12 @@ function wpmup_init_js() {
             }, 3000); /** 3 seconds */
         }
        
-    );
-<?php
+    );';
+/** 
+ * the code within this function (above) is javascript
+ * well, except for the echo of course. 
+ */
 
-/** the code within this function (above) is javascript */
 } 
 
 ?>
