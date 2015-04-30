@@ -4,7 +4,7 @@ Display notifications to your site visitors or logged in users when there is a n
 Introduction: https://www.youtube.com/watch?v=MCteV2e5Hlk
 
 #### Important
-After downloading from Github, you MUST rename the zip file from wpmupush-master.zip to wpmupush.zip to avoid any potential issues. I'll fix this later on so you wont need to rename it, but for now you should rename the file to wpmupush.zip then upload it like usualy to your WordPress site to install and activate.
+After downloading from Github, you MUST rename the plugin directory from wpmupush-master to wpmupush to avoid any potential issues. I'll fix this later on so you wont need to rename it. (feel free to help out, see line 146 via https://github.com/belkincapital/wpmupush/blob/master/wpmupush.php)
 
 #### About Deactivation
 When you deactivate the plugin, a clean uninstall is ran that deletes all database tables associated with the plugin.
