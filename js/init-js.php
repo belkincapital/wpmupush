@@ -9,15 +9,16 @@
 function get_notifyMe() {
 
     global $WPMUP_VERSION_KEY;
+
+    /** Get plugin directory url */
+    $wpmupush_url    = plugin_dir_url( dirname(__FILE__) );
+    $wpmupush_string = "get_notifier.php?ver=";
     
     /** Used to create version strings. Stops file from being cached */
     $PUT_VER_STRING = time();
     
-    /** Get plugin directory url */   
-    $plugins_url = plugins_url();
-    
     /** Url to external js file with version string */
-    $GET_NOTIFY = "$plugins_url/wpmupush/get_notifier.php?ver=$WPMUP_VERSION_KEY.$PUT_VER_STRING";
+    $GET_NOTIFY = "$wpmupush_url$wpmupush_string$WPMUP_VERSION_KEY.$PUT_VER_STRING";
     
     return $GET_NOTIFY;
 }

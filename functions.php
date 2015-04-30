@@ -37,11 +37,12 @@ function get_initMe() {
     /** Used to create version strings. Stops file from being cached */
     $PUT_VER_STRING = time();
     
-    /** Get plugin directory url */   
-    $plugins_url = plugins_url();
+    /** Get plugin directory url */
+    $WPMUPUSH_URL    = plugin_dir_url( __FILE__ );  
+    $WPMUPUSH_STRING = "get_init.php?ver=$PUT_VER_STRING.$WPMUP_VERSION_KEY"; 
     
     /** Url to external js file with version string */
-    $GET_INIT = "$plugins_url/wpmupush/get_init.php?ver=$PUT_VER_STRING.$WPMUP_VERSION_KEY";
+    $GET_INIT = "$WPMUPUSH_URL$WPMUPUSH_STRING";
     
     return $GET_INIT;
 }

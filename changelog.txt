@@ -1,1 +1,5 @@
-0.5 = Initial pre-release. Beta 1.
+1.0.1 = Fixed Hardcoded plugin folder name. Issues #11 on Github via https://github.com/belkincapital/wpmupush/issues/11
+
+1.0   = Initial public release.
+
+0.5   = Initial pre-release. Beta 1.
