@@ -6,7 +6,7 @@
     
     Author: Jason Jersey
     Author URI: https://www.twitter.com.com/degersey
-    Version: 1.0.1
+    Version: 1.0.2
     Text Domain: wpmupush
     Domain Path: /languages/
     License: GNU General Public License 3.0 
