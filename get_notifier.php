@@ -13,11 +13,12 @@
     http_response_code(200);
     header("content-type: application/x-javascript");
     
-?>
-if (Notification.permission !== 'denied') {
+echo "if (Notification.permission !== 'denied') {
     Notification.requestPermission(function (permission) {
         if (!('permission' in Notification)) {
             Notification.permission = permission;
         }
     });
-}
+}";
+
+?>
