@@ -57,8 +57,7 @@ function the_notifyMe() {
 
 echo "\n<!-- Web Notifications by WPMU Push -->\n";
 /** echo "<script type='text/javascript' src='http://code.jquery.com/jquery-1.11.1.min.js'></script>\n"; */
-/** wp_enqueue_script("jquery"); */
-echo "<script type='text/javascript' src='" . get_initMe() . "'></script>\n";
+echo "<script type='text/javascript' src='" . get_initMe() . "' defer></script>\n";
 echo "<!--// WPMU Push (www.wpmupush.com) -->\n\n";
 
 }
